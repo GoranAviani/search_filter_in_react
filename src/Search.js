@@ -5,7 +5,7 @@ const Search = ({data, appDataHandler}) => {
     const [userInput, setUserInput] = useState('')
     const [filterList, setFilterList] = useState(data);
 
-    const handleSearch = (event) => {
+    const inputHandler = (event) => {
         setUserInput(event.target.value)
         if (userInput === "") {
             setFilterList(data);
@@ -26,12 +26,13 @@ const Search = ({data, appDataHandler}) => {
     return (
         <form onSubmit={submitFormHandler}>
             <div>
-                Search: <input name="query" type="text" value={userInput} onChange={handleSearch}/>
+                Search: <input value={userInput} onChange={inputHandler}/>
             </div>
             {filterList &&
                 filterList.map((item) => (
                     <div>{item}</div> //Display each item
                 ))}
+            <button type="submit">Search</button>
         </form>
     );
 }
