@@ -14,9 +14,14 @@ const data = [
 
 
 function App() {
+
+    const appDataHandler = (userInput) => {
+        console.log(userInput)
+    }
+
   return (
     <div className="App">
-     <Search data={data}/>
+     <Search data={data} appDataHandler={appDataHandler}/>
     </div>
   );
 }

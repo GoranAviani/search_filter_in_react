@@ -1,12 +1,12 @@
 import React, {useState} from "react";
 
 
-const Search = ({data}) => {
+const Search = ({data, appDatahandler}) => {
     const [userInput, setUserInput] = useState('')
 
     const formSubmit = (e) => {
         e.preventDefault()
-
+        appDatahandler(userInput)
 
     }
 
