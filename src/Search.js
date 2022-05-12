@@ -7,8 +7,6 @@ const Search = ({data, appDataHandler}) => {
 
     const formSubmit = (e) => {
         e.preventDefault()
-
-
         appDataHandler(filteredResult)
     }
 
