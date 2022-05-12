@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 
-const Search = ({data, appDatahandler}) => {
+const Search = ({data, appDataHandler}) => {
     const [userInput, setUserInput] = useState('')
 
     const formSubmit = (e) => {
