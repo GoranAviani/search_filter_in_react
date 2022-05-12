@@ -18,8 +18,14 @@ const Search = ({data, appDataHandler}) => {
     );
     setFilterList(filteredValues);
   };
+
+  const submitFormHandler = (e) => {
+      e.preventDefault()
+      appDataHandler(filterList)
+    }
+
   return (
-    <div className="app">
+    <form onSubmit={submitFormHandler}>
       <div>
         Search: <input name="query" type="text" value={userInput} onChange={handleSearch} />
       </div>
@@ -27,7 +33,7 @@ const Search = ({data, appDataHandler}) => {
         filterList.map((item) => (
           <div>{item}</div> //Display each item
         ))}
-    </div>
+    </form>
   );
 }
 
