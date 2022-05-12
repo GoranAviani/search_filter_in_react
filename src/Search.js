@@ -6,7 +6,7 @@ const Search = ({data, appDataHandler}) => {
 
     const formSubmit = (e) => {
         e.preventDefault()
-        appDatahandler(userInput)
+        appDataHandler(userInput)
 
     }
 
