@@ -1,16 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 
 
 const Search = ({data}) => {
+    const [userInput, setUserInput] = useState('')
 
-    const formSubmit = () => {
+    const formSubmit = (e) => {
+        e.preventDefault()
 
+
+    }
+
+    const inputHandler = (e) => {
+        setUserInput(e.target.value)
     }
 
     return(
         <form onSubmit={formSubmit}>
 
-            <input/>
+            <input value={userInput} onChange={inputHandler}/>
             <button type="submit">Search</button>
         </form>
     )
