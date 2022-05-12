@@ -7,10 +7,10 @@ const Search = ({data, appDataHandler}) => {
     const formSubmit = (e) => {
         e.preventDefault()
 
-           const filteredData = data.filter(
-      (item) =>
-        item.toLowerCase().indexOf(userInput.toLowerCase()) !== -1
-    );
+        const filteredData = data.filter(
+            (item) =>
+                item.toLowerCase().indexOf(userInput.toLowerCase()) !== -1
+        );
 
 
         appDataHandler(filteredData)
