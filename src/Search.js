@@ -14,9 +14,8 @@ const Search = ({data}) => {
         setUserInput(e.target.value)
     }
 
-    return(
+    return (
         <form onSubmit={formSubmit}>
-
             <input value={userInput} onChange={inputHandler}/>
             <button type="submit">Search</button>
         </form>
