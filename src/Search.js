@@ -1,10 +1,10 @@
 import React from "react";
 
 
-const Search = () => {
+const Search = ({data}) => {
 
     return(
-        <p>Search</p>
+        <p>{data}</p>
     )
 }
 
