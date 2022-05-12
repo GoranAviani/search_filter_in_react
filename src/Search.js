@@ -3,6 +3,7 @@ import React, {useState} from "react";
 
 const Search = ({data, appDataHandler}) => {
     const [userInput, setUserInput] = useState('')
+    const {filteredResult, setFilteredResult} = useState()
 
     const formSubmit = (e) => {
         e.preventDefault()
@@ -11,11 +12,7 @@ const Search = ({data, appDataHandler}) => {
             (item) =>
                 item.toLowerCase().indexOf(userInput.toLowerCase()) !== -1
         );
-
-
         appDataHandler(filteredData)
-
-
     }
 
     const inputHandler = (e) => {
@@ -26,6 +23,7 @@ const Search = ({data, appDataHandler}) => {
         <form onSubmit={formSubmit}>
             <input value={userInput} onChange={inputHandler}/>
             <button type="submit">Search</button>
+            {}
         </form>
     )
 }
