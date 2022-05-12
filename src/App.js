@@ -3,10 +3,20 @@ import './App.css';
 
 import Search from "./Search";
 
+const data = [
+    "Banana",
+    "Apple",
+    "Orange",
+    "Mango",
+    "Pineapple",
+    "Watermelon"
+  ];
+
+
 function App() {
   return (
     <div className="App">
-     <Search/>
+     <Search data={data}/>
     </div>
   );
 }
