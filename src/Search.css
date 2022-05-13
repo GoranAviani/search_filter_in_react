@@ -10,10 +10,15 @@
 }
 
 .search-row input{
-    flex: 2;
+    flex: 3;
 }
 .search-row button{
+    flex: 2;
+}
+.search-row h3{
+    display: flex;
     flex: 1;
+    align-content: center;
 }
 
 .search-result{
