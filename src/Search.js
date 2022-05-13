@@ -28,7 +28,7 @@ const Search = ({data, appDataHandler}) => {
         <form class="search-form" onSubmit={submitFormHandler}>
 
             <span class="search-row">
-                <label>Search</label>
+                <h3>Search</h3>
                 <input value={userInput} onChange={inputHandler}/>
                 <button type="submit">Search</button>
             </span>
