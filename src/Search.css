@@ -1,0 +1,30 @@
+.search-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.search-row {
+    display: flex;
+    flex: 1 1 50px;
+    border: 10px solid rgba(0, 0, 0, 0.3);
+}
+
+.search-row input {
+    flex: 3;
+}
+
+.search-row button {
+    flex: 2;
+}
+
+.search-row h3 {
+    flex: 1;
+}
+
+.search-result {
+    display: flex;
+    flex: 1 1 100%;
+    flex-direction: column;
+    border: 1px solid red;
+    align-items: center;
+}
