@@ -1,5 +1,22 @@
 .search-form{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+}
+
+.search-row{
+    display: flex;
+    flex: 1 1 50px;
+    border: 10px solid rgba(0,0,0,0.3);
+}
+
+.search-row input{
+    flex: 2;
+}
+.search-row button{
+    flex: 1;
+}
+
+.search-result{
+        flex: 1 1 100%;
 
 }
