@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import './Search.css'
 
 
 const Search = ({data, appDataHandler}) => {
@@ -24,11 +25,13 @@ const Search = ({data, appDataHandler}) => {
     }
 
     return (
-        <form onSubmit={submitFormHandler}>
-            <div>
-                Search: <input value={userInput} onChange={inputHandler}/>
-            </div>
+        <form class="search-form" onSubmit={submitFormHandler}>
+
+            <label>Search</label>
+            <input value={userInput} onChange={inputHandler}/>
+
             {filterList ? filterList.map((item)=><p>{item}</p>) : "No results found"}
+
             <button type="submit">Search</button>
         </form>
     );
