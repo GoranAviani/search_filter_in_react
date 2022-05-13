@@ -16,9 +16,7 @@
     flex: 2;
 }
 .search-row h3{
-    display: flex;
     flex: 1;
-    align-content: center;
 }
 
 .search-result{
