@@ -28,7 +28,7 @@ const Search = ({data, appDataHandler}) => {
             <div>
                 Search: <input value={userInput} onChange={inputHandler}/>
             </div>
-            {filterList ? filterList : "No results found"}
+            {filterList ? filterList.map((item)=><p>{item}</p>) : "No results found"}
             <button type="submit">Search</button>
         </form>
     );
