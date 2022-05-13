@@ -27,12 +27,14 @@ const Search = ({data, appDataHandler}) => {
     return (
         <form class="search-form" onSubmit={submitFormHandler}>
 
-            <label>Search</label>
-            <input value={userInput} onChange={inputHandler}/>
-
-            {filterList ? filterList.map((item)=><p>{item}</p>) : "No results found"}
-
-            <button type="submit">Search</button>
+            <span class = "search-row">
+                <label>Search</label>
+                <input value={userInput} onChange={inputHandler}/>
+                <button type="submit">Search</button>
+            </span>
+                <span class="search-result">
+                {filterList ? filterList.map((item)=><p>{item}</p>) : "No results found"}
+            </span>
         </form>
     );
 }
